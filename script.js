@@ -2,26 +2,27 @@ $(document).ready(function() {
  
 	var $body = $('body');
 
-  alert("let's play FizzBuzz!");  
- 
+  var $inputField = $('.inputitem');
+  var $fizzBuzzButton = $('.fizzBuzzButton');
+  
+  $fizzBuzzButton.click(function() {
+  	var inputValue = $inputField.val();
+  	var parsedValue = parseInt(inputValue);
+  	console.log(parsedValue);
 
-// my fizzbuzz program
-
-	for (var i = 0; i <= 100; i++) {
-
-		if (i % 3 == 0 && i % 5 == 0) {
-			$body.append('<div>FizzBuzz</div>');
-		}
-		else if (i % 3 == 0) {
-			$body.append('<div>Fizz</div>');
-		}
-		else if (i % 5 == 0) {
-			$body.append('<div>Buzz</div>');
-		}
-		else {
-			$body.append('<div>' + i + '</div>');
-		}
+  	if(isNaN(parsedValue)) {
+  		alert("Error: not a number");
+  	}
+  	else if (parsedValue% 3 == 0) {
+		$body.append('<div>Fizz</div>');
 	}
+	else if (parsedValue% 5 == 0) {
+		$body.append('<div>Buzz</div>');
+	}
+	else {
+		$body.append('<div>' + parsedValue + '</div>');
+	}
+  });
 });
 
 
