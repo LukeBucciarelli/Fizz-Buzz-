@@ -7,19 +7,32 @@ $(document).ready(function() {
   
   $fizzBuzzButton.click(function() {
   	var inputValue = $inputField.val();
-  	var parsedValue = parseInt(inputValue);
+  	
+    var parsedValue = parseInt(inputValue);
   	console.log(parsedValue);
 
   	if(isNaN(parsedValue)) {
   		alert("Error: not a number");
   	}
-  	else if (parsedValue% 3 == 0) {
+  	
+    else if (parsedValue% 3 && parsedValue %5) {
+    $body.append('<div>FizzBuzz</div>');
+  }
+
+    else if (parsedValue% 3 == 0) {
 		$body.append('<div>Fizz</div>');
 	}
 	else if (parsedValue% 5 == 0) {
 		$body.append('<div>Buzz</div>');
 	}
-	else {
+	
+  //else if (parsedValue% 3 && parsedValue %5) {
+    //$body.append('<div>FizzBuzz</div>');
+  //}
+ 
+
+
+  else {
 		$body.append('<div>' + parsedValue + '</div>');
 	}
   });
