@@ -1,6 +1,6 @@
 $(document).ready(function() {
  
-	var $body = $('body');
+	var $li = $('li');
 
   var $inputField = $('.inputitem');
   var $fizzBuzzButton = $('.fizzBuzzButton');
@@ -17,19 +17,19 @@ $(document).ready(function() {
   	
     
     else if ((parsedValue%3 == 0) && (parsedValue%5 == 0)){
-    $body.append('<div>FizzBuzz</div>');
+    $li.append('<li>FizzBuzz</li>');
     }
 
     else if (parsedValue% 3 == 0) {
-		$body.append('<div>Fizz</div>');
+		$li.append('<li>Fizz</li>');
 	  }
 
 	  else if (parsedValue% 5 == 0) {
-		$body.append('<div>Buzz</div>');
+		$li.append('<li>Buzz</li>');
 	  }
 
     else {
-		$body.append('<div>' + parsedValue + '</div>');
+		$li.append('<li>' + parsedValue + '</li>');
 	  }
 
   });

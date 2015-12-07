@@ -1,9 +1,9 @@
 .inputitem {
-	position: center;
-   
+	
+    
+    box-shadow: 1px 1px 3px #333333;
 	text-align: center;
 	color: #FF9900;
-	margin: 10px;
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 25px;
@@ -12,7 +12,8 @@
 
 .fizzBuzzButton {
 
-
+    text-shadow:1px 1px 3px #333333;
+    margin: auto;
 	background-color: #FF9900;
     border: 4px;
     border-radius: 5px;
@@ -26,26 +27,40 @@
 }
 
 
+.outputlist {
+    text-align: center;
+    list-style: none;
+    color: #FF9900;
+    font-size: 60px;
+    font-family: 'Roboto', sans-serif;
+    text-shadow:1px 1px 3px #333333;
+}
+
+
+
+
 h1 {
 
 	text-align: center;
     font-family: 'Roboto', sans-serif;
     font-weight: 50%;
     color: #FF9900 ; 
-	font-size: 30px;
-	padding-top: 15px;
+	font-size: 70px;
+	text-shadow:1px 1px 3px #333333;
+    padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 25px;
     padding-right: 25px;
 }
 
 footer {
-
+    
+    padding-top: 90px;
 	text-align: center;
     font-family: 'Roboto', sans-serif;
     font-weight: 50%;
     color: #FF9900 ; 
-
+   
 }
 
 
